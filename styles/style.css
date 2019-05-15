@@ -2,15 +2,17 @@
   box-sizing: border-box;
 }
 body{
-  color: #636161;
+  /* color: #636161; */
   font-family: 'PT Sans', sans-serif;
   font-size: 1.3rem;
+  width:100%;
+  margin:0;
 }
 a{
   text-decoration: none;
 }
 a:hover{
-  opacity: .7;
+  opacity: .6;
 }
 
 a:visited{
@@ -26,10 +28,12 @@ header{
   display: inline-flex;
   position: fixed;
   top: 0;
+  left:0;
   align-items: center;
   width:100%;
   height: 4.5rem;
-  background-color: white;
+  background: rgb(25,182,162);
+  background: linear-gradient(52deg, rgba(25,182,162,1) 7%, rgba(52,126,118,1) 13%, rgba(123,240,219,1) 68%);
 }
 .header-logo{
   height: 3rem;
@@ -57,7 +61,9 @@ nav li{
   width:100%;
   padding: 2.5rem;
   margin-top: 72px;
-}
+  margin-left: 0;
+  background: rgb(25,182,162);
+  background: linear-gradient(52deg, rgba(25,182,162,1) 0%, rgba(169,186,184,1) 4%, rgba(143,205,194,1) 68%);}
 
  .intro-container img{
   width:60%;
@@ -83,12 +89,13 @@ padding-left: 1.5rem;
   order: 4;
   width: 40%;
   height: 3rem;
-  background-color: darkgrey;
+  background-color: #38c193;
 }
 .start-button a{
 position: relative;
 top:20%;
 left: 25%;
+color: black;
 }
 /* ******************************************* */
 
@@ -96,7 +103,8 @@ left: 25%;
 .info-container{
 display: inline-flex;
 padding: 2.5rem;
-}
+background: rgb(194,153,196);
+background: linear-gradient(0deg, rgba(194,153,196,1) 0%, rgba(236,227,238,1) 100%);}
 .info-content img{
   width: 100%;
   height: auto;
@@ -143,8 +151,8 @@ padding: 5px;
 /* ************************************************************ */
 /*                      Courses Section                    */
 .learning-container{
-  background-color: lightgrey;
-  padding: 2.5rem;
+  background: rgb(25,182,162);
+  background: linear-gradient(52deg, rgba(25,182,162,1) 0%, rgba(169,186,184,1) 4%, rgba(143,205,194,1) 68%);  padding: 2.5rem;
 }
 
 .learning-container h1{
@@ -158,9 +166,8 @@ padding: 5px;
 }
 .course{
   margin: .8rem;
-  background-color: white;
+  background-color: #38c193;
   width:30%;
-
 }
 .course h3{
   padding-left: 1rem;
@@ -177,13 +184,18 @@ padding: 5px;
 }
 /* *******************THESIS SECTION********************** */
                       /* VIDEO SIDE */
+
 .thesis-container{
   display: flex;
-  padding:2rem;
+  padding:5.3rem 2rem 2rem 2rem;
+  background: rgb(194,153,196);
+background: linear-gradient(0deg, rgba(194,153,196,1) 0%, rgba(236,227,238,1) 100%);
 }
-.thesis-header h1{
+.thesis-container h1{
 text-align: center;
-margin:2.1rem auto;
+position: relative;
+bottom: 5.3rem;
+left: 13.75rem;
 }
 .video-side{
   width: 60%;
