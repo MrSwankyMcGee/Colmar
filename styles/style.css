@@ -96,8 +96,8 @@ padding-left: 1.5rem;
 }
 .start-button a{
 position: relative;
-top:20%;
-left: 25%;
+top:25%;
+left: 21%;
 color: black;
 }
 /* ******************************************* */
@@ -169,7 +169,8 @@ padding: 5px;
 }
 .course{
   margin: .8rem;
-  background-color: #38c193;
+  background: rgb(25,182,162);
+  background: linear-gradient(52deg, rgba(25,182,162,1) 7%, rgba(52,126,118,1) 13%, rgba(123,240,219,1) 68%);
   width:30%;
 }
 .course h3{
@@ -190,14 +191,14 @@ padding: 5px;
 
 .thesis-container{
   display: flex;
-  padding:5.3rem 2rem 2rem 2rem;
+  padding:8.3rem 2rem 2rem 2rem;
   background: rgb(194,153,196);
 background: linear-gradient(0deg, rgba(194,153,196,1) 0%, rgba(236,227,238,1) 100%);
 }
 .thesis-container h1{
 text-align: center;
 position: relative;
-bottom: 5.3rem;
+bottom: 6.3rem;
 left: 13.75rem;
 }
 .video-side{
