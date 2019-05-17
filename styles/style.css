@@ -60,6 +60,16 @@ nav li{
   list-style: none;
   padding-left: .8rem;
 }
+nav a{
+  transition-duration: 400ms;
+  transition-delay: 100ms;
+  transition-property: background-color;
+  transition-timing-function: linear;
+}nav a:hover{
+  background-color: #026e6c;
+  opacity:.5;
+  color:#eadedb;
+}
 
 
 
@@ -174,6 +184,7 @@ padding: 5px;
 /* ************************************************************ */
 /*                      Courses Section                    */
 .learning-container{
+  padding: 1.5rem 2.5rem 2.5rem 2.5rem;
   background: rgb(25,182,162);
   background: linear-gradient(52deg, rgba(25,182,162,1) 0%, rgba(169,186,184,1) 4%, rgba(143,205,194,1) 68%);  padding: 2.5rem;
 }
@@ -181,7 +192,9 @@ padding: 5px;
 .learning-container h1{
   text-align: center;
 }
-
+.course-container-mobile{
+  display:none;
+}
 .course-container{
   display: inline-flex;
   flex-wrap: wrap;
@@ -220,6 +233,9 @@ text-align: center;
 position: relative;
 bottom: 6.3rem;
 left: 13.75rem;
+}
+.video-side-mobile{
+  display: none;
 }
 .video-side{
   width: 60%;
@@ -280,6 +296,10 @@ nav{
 nav img{
   list-style: none;
   padding-left: .8rem;
+}
+nav li{
+  text-align: center;
+  padding:0;
 }
 /* END HEADER RESPONSIVE */
 /* INTRO SECTION RESPONSIVE */
@@ -365,6 +385,52 @@ padding: 5px;
   justify-content: center;
 }
 /* START LEARNING SECTION RESPONSIVE */
+.course-container-mobile{
+  display: flex;
+  flex-direction: column;
+}
+.course-mobile{
+  margin: .8rem auto;
+  background: rgb(25,182,162);
+  background: linear-gradient(52deg, rgba(25,182,162,1) 7%, rgba(52,126,118,1) 13%, rgba(123,240,219,1) 68%);
+  width: 100%;
+}
+.course-mobile h2{
+  text-align: center;
+  font-size: 1.5rem;
+}
+.course-container{
+  display: none;
+}
+/* LEARNING SECTION END RESPONSIVE */
+/* THESIS SECTION RESPONSIVE */
+.thesis-container-mobile{
+  display:block;
+}
+.thesis-container h1{
+  position: static;
+  margin: 0 auto;
+}
+.thesis-container{
+  padding: 2.5rem 0 1rem 0;
+}
+.video-side-mobile{
+  display: flex;
+  flex-direction: column;
+}
+
+.video-side-mobile video{
+  width: 100%;
+  height:auto;
+  margin: 1rem 0 2.5rem 0;
+}
+.video-side{
+  display: none;
+}
+.right-side{
+  display: none;
+}
+/* END THESIS SECTION RESPONSIVE */
 
 }
 /* END MEDIA QUERIES */
