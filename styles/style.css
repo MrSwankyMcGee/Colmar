@@ -63,9 +63,10 @@ nav li{
 nav a{
   transition-duration: 400ms;
   transition-delay: 100ms;
-  transition-property: background-color;
+  transition-property: background-color border-radius;
   transition-timing-function: linear;
 }nav a:hover{
+  border-radius: 4px;
   background-color: #026e6c;
   opacity:.5;
   color:#eadedb;
@@ -113,12 +114,13 @@ padding-left: 1.5rem;
   height: 3rem;
   background-color: #38c193;
   transition-duration: 400ms;
-  transition-property: background-color, font-size, font-weight;
+  transition-property: background-color, font-size, font-weight border-radius;
   transition-timing-function: ease-in;
 }
 .start-button:hover{
   background: rgb(25,155,175);
-  font-size: 1.4rem;
+  /* font-size: 1.4rem; */
+  border-radius: 4px;
   font-weight:bold;
 }
 .start-button a{
